@@ -1,6 +1,7 @@
 package com.magnus.letsmodreboot;
 
 import com.magnus.letsmodreboot.handler.ConfigurationHandler;
+import com.magnus.letsmodreboot.init.ModBlocks;
 import com.magnus.letsmodreboot.init.ModItems;
 import com.magnus.letsmodreboot.proxy.IProxy;
 import com.magnus.letsmodreboot.reference.Reference;
@@ -29,6 +30,8 @@ public class LetsModReboot
         LogHelper.info("Pre Initialization Complete!");
 
         ModItems.init();
+
+        ModBlocks.init();
     }
 
     @Mod.EventHandler

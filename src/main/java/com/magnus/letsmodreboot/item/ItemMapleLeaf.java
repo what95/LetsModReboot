@@ -1,6 +1,7 @@
 package com.magnus.letsmodreboot.item;
 
-
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
 
 /**
@@ -11,6 +12,7 @@ public class ItemMapleLeaf extends ItemLMRB
     public ItemMapleLeaf()
     {
         super();
+        this.toolMaterial.getHarvestLevel() >= 2;
         this.setMaxStackSize(3);
         this.setUnlocalizedName("mapleLeaf");
     }
